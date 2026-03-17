@@ -1,0 +1,68 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 4,
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right":  ["backlight", "backlight/slider", "pulseaudio", "cpu", "memory", "battery", "tray", "custom/power"],
+
+    "hyprland/workspaces": {
+        "format": "{id}",
+        "on-click": "activate"
+    },
+
+    "custom/power": {
+    "format": "🆘",
+    "on-click": "~/.config/waybar/powermenu.sh",
+    "tooltip": false
+},
+
+    "backlight": {
+    "device": "intel_backlight",
+    "format": "{percent}% {icon}",
+    "format-icons": ["", ""]
+    },
+
+    "clock": {
+        "format": "{:%a %b %d  %H:%M}",
+        "tooltip": false
+    },
+
+    "cpu": {
+        "format": "cpu {usage}%",
+        "interval": 2
+    },
+
+    "memory": {
+        "format": "mem {}%",
+        "interval": 2
+    },
+
+    "backlight/slider": {
+    "min": 10,
+    "max": 100,
+    "orientation": "horizontal",
+    "device": "intel_backlight"
+    },
+
+    "pulseaudio": {
+        "format": "vol {volume}%",
+        "format-muted": "muted",
+        "on-click": "pamixer -t"
+    },
+
+    "battery": {
+        "format": "bat {capacity}%",
+        "format-charging": "chr {capacity}%",
+        "states": {
+            "warning": 30,
+            "critical": 15
+        }
+    },
+
+    "tray": {
+        "spacing": 8
+    }
+}
