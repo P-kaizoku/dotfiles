@@ -1,23 +1,17 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 30,
+    "height": 16,
     "spacing": 4,
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right":  ["backlight", "backlight/slider", "pulseaudio", "cpu", "memory", "battery", "tray", "custom/power"],
+    "modules-right":  ["backlight", "backlight/slider", "pulseaudio", "cpu", "memory", "battery", "tray"],
 
     "hyprland/workspaces": {
         "format": "{id}",
         "on-click": "activate"
-    },
-
-    "custom/power": {
-    "format": "🆘",
-    "on-click": "~/.config/waybar/powermenu.sh",
-    "tooltip": false
-},
+    }, 
 
     "backlight": {
     "device": "intel_backlight",

@@ -109,6 +109,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias hyprconf="nvim ~/.config/hypr/hyprland.conf"
+alias zshconf="nvim ~/.zshrc"
+alias catconf="nvim ~/.config/kitty/kitty.conf"
+alias dots="~/dotfiles/sync.sh"
 alias vi="nvim"
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
