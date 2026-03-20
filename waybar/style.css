@@ -20,6 +20,12 @@ window#waybar {
     padding: 0 4px;
 }
 
+#window {
+    padding: 0 10px;
+    color: #cdd6f4;
+    opacity: 0.7;
+}
+
 #workspaces button {
     padding: 0 6px;
     color: #6c7086;

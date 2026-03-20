@@ -110,10 +110,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias hyprconf="nvim ~/.config/hypr/hyprland.conf"
-alias zshconf="nvim ~/.zshrc"
+alias zshc="nvim ~/.zshrc"
+alias zshs="source .zshrc"
 alias catconf="nvim ~/.config/kitty/kitty.conf"
+alias paconf="nvim /etc/pacman.conf"
+alias per="cd ./Personal"
 alias dots="~/dotfiles/sync.sh"
 alias vi="nvim"
+alias mmc="ollama launch claude --model minimax-m2.7:cloud"
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -125,3 +129,7 @@ if [ -d "$FNM_PATH" ]; then
   export PATH="$FNM_PATH:$PATH"
   eval "$(fnm env --shell zsh)"
 fi
+export PATH="$HOME/.local/bin:$PATH"
+
+# opencode
+export PATH=/home/p4v1/.opencode/bin:$PATH

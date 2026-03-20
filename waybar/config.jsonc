@@ -4,9 +4,16 @@
     "height": 16,
     "spacing": 4,
 
-    "modules-left": ["hyprland/workspaces"],
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": ["clock"],
     "modules-right":  ["backlight", "backlight/slider", "pulseaudio", "cpu", "memory", "battery", "tray"],
+
+    "hyprland/window": {
+    	"format": "{}",
+	"max-length": 40,
+	"separate-outputs": true
+    },
+
 
     "hyprland/workspaces": {
         "format": "{id}",
