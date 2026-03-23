@@ -116,6 +116,8 @@ alias catconf="nvim ~/.config/kitty/kitty.conf"
 alias paconf="nvim /etc/pacman.conf"
 alias per="cd ./Personal"
 alias dots="~/dotfiles/sync.sh"
+alias orbs="~/obnotes/sync.sh"
+alias pong="~/dotfiles/pong"
 alias vi="nvim"
 alias mmc="ollama launch claude --model minimax-m2.7:cloud"
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
@@ -137,3 +139,6 @@ export PATH=/home/p4v1/.opencode/bin:$PATH
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 export PATH=$PATH:$HOME/go/bin
+
+# OpenClaw Completion
+source "/home/p4v1/.openclaw/completions/openclaw.zsh"
